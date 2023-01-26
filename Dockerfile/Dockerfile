@@ -11,3 +11,6 @@ LABEL version="1.0.0"
 
 VOLUME /var/www/html
 EXPOSE 80
+
+ENTRYPOINT [ "/usr/sbin/apachectl" ]
+CMD [ "-D", "FOREGROUND" ]
